@@ -56,18 +56,21 @@ function NewIncident() {
                     placeholder="Título do caso"
                     value={title}
                     onChange={e => setTitle(e.target.value)}
+                    minlength="5"
                 />
                 <textarea 
                     type="text"
                     placeholder="Descrição"
                     value={description}
                     onChange={e => setDescription(e.target.value)}
+                    minlength="5"
                 />
                 <input 
-                    type="text"
+                    type="number"
                     placeholder="Valor em reais"
                     value={value}
                     onChange={e => setValue(e.target.value)}
+                    minlength="1"
                 />
 
                 <button className="button" type="submit">Cadastrar</button>

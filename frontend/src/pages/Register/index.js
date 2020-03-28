@@ -56,6 +56,7 @@ function Register() {
                         placeholder="Nome da ONG"
                         value={name}
                         onChange={e => setName(e.target.value)}
+                        minlength="2"
                     />
                     <input 
                         type="email" 
@@ -68,6 +69,7 @@ function Register() {
                         placeholder="WhatsApp" 
                         value={whatsapp}
                         onChange={e => setWhatsapp(e.target.value)}
+                        minlength="11" maxlength="11"
                     />
 
                     <div className="input-group">
@@ -76,6 +78,7 @@ function Register() {
                             placeholder="Cidade" 
                             value={city}
                             onChange={e => setCity(e.target.value)}
+                            minlength="3" maxlength="3"
                         />
                         <input 
                             type="text" 
@@ -83,6 +86,7 @@ function Register() {
                             style={{ widht: 80 }} 
                             value={uf}
                             onChange={e => setUf(e.target.value)}
+                            minlength="2" maxlength="2"
                         />
                     </div>
 
